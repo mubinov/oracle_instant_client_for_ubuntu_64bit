@@ -34,3 +34,6 @@ The filenames should match the following pattern:
 ### Warnings
 **This utility is provided as-is with absolutely no support.**  
 I will not be able to help you if it hoses up your system somehow.
+
+### Further Reading
+This program basically automates the instructions found on the [Ubuntu help forums](https://help.ubuntu.com/community/Oracle%20Instant%20Client).
