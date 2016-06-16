@@ -18,7 +18,7 @@ to using the installation script.
 **Important: Currently, this only supports 64-bit machines.**  
 
 ### Instructions
-1. Download the necessary rpm files from Oracle for whatever version you want.
+1. Download [Oracle.com - registration requried](http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html) the necessary rpm files from Oracle for whatever version you want.
 You'll need the 'basic', 'devel', and 'sqlplus' packages.  
 The filenames should match the following pattern:
     * oracle-instantclient[version]-basic-[more-version-info].x86_64.rpm
