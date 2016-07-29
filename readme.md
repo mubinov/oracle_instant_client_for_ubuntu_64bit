@@ -18,16 +18,23 @@ to using the installation script.
 **Important: Currently, this only supports 64-bit machines.**  
 
 ### Instructions
-1. Download [Oracle.com - registration requried](http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html) the necessary rpm files from Oracle for whatever version you want.
+1. Download [Oracle.com (registration requried)](http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html) the necessary rpm files from Oracle for whatever version you want.
 You'll need the 'basic', 'devel', and 'sqlplus' packages.  
 The filenames should match the following pattern:
     * oracle-instantclient[version]-basic-[more-version-info].x86_64.rpm
     * oracle-instantclient[version]-devel-[more-version-info].x86_64.rpm
     * oracle-instantclient[version]-sqlplus-[more-version-info].x86_64.rpm
 
-2. Download the `install_oracle_instantclient.py` script.
-3. Run it as root, specifying the location of the rpm files as an argument: `sudo python install_oracle_instantclient.py [directory_holding_rpms]`
-    * If you have an error, please submit it as an issue.
+2. Download the `install_oracle_instantclient.py` script:
+   
+   ```
+   $ wget https://raw.githubusercontent.com/mubinov/oracle_instant_client_for_ubuntu_64bit/master/install_oracle_instantclient.py
+   ```
+
+3. Run it as root, specifying the location of the rpm files as an argument: 
+   ```
+   $ sudo python install_oracle_instantclient.py [directory_holding_rpms ("." for current dir)]`
+   ````
 4. Obtain your sqlnet.ora, tnsnames.ora, and possibly ldap.ora files from your DBA.
 5. Place those files into the /usr/lib/oracle/[version you installed]/client64/network/admin directory.
 
